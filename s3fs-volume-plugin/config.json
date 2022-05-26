@@ -26,7 +26,7 @@
             "settable": [
                 "value"
             ],
-            "value": "nomultipart,use_path_request_style"
+            "value": "nomultipart"
         }
     ],
     "network": {
