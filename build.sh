@@ -41,11 +41,11 @@ build() {
     cp $1/config.json build
     if [ $ARCH == "x86_64" ]
     then
-        docker plugin create mochoa/$1:$TAG build
-        docker plugin push mochoa/$1:$TAG
+        docker plugin create qnlbnsl/$1:$TAG build
+        docker plugin push qnlbnsl/$1:$TAG
     else
-        docker plugin create mochoa/$1-$ARCH:$TAG build
-        docker plugin push mochoa/$1-$ARCH:$TAG
+        docker plugin create qnlbnsl/$1-$ARCH:$TAG build
+        docker plugin push qnlbnsl/$1-$ARCH:$TAG
     fi
 }
 build glusterfs-volume-plugin
